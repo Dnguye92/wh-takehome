@@ -14,6 +14,8 @@ import { canFormWord } from "./utils/canFormWord";
  *                     from the input string. If no words can be formed, the function returns an empty array.
  */
 function findWords(inputString: string, dictionary: string[]) {
+  // Return an empty array if `dictionary` is empty.
+  if (dictionary.length === 0) return [];
   /*
     Call `countLetters` to create a map of the number
     of occurences for each character in the provided `inputString`.
@@ -48,6 +50,6 @@ function findWords(inputString: string, dictionary: string[]) {
 };
 
 // Example usages
-console.log(findWords("ater", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
+// console.log(findWords("ater", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
 
-// console.log(findWords("oogd", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
+console.log(findWords("oogd", ["ate", "eat", "tea", "dog", "do", "god", "goo", "go", "good"]));
