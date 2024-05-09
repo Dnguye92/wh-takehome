@@ -1,4 +1,10 @@
 {
+  "name": "wh-takehome",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "npx ts-node src/index.ts"
+  },
   "devDependencies": {
     "@types/node": "^20.12.11",
     "typescript": "^5.4.5"
