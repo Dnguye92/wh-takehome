@@ -19,19 +19,19 @@ function countLetters(word: string): Map<string, number>
 In this helper function I had to implement the logic for creating a letter count map where each character would be the key and it's value would be the number of occurences of said character. Looping through each character of the word, I had to add each character as a map key with an initial value of 0. If the next character in the loop already exists in the map, then I would simply increment it's value by 1. Shown below:
 
 ```typescript
-    const letterCountMap = new Map<string, number>();
+const letterCountMap = new Map<string, number>();
 
-    for (const char of word) {
-        letterCountMap.set(char, (letterCountMap.get(char) ?? 0) + 1);
-    }
+for (const char of word) {
+    letterCountMap.set(char, (letterCountMap.get(char) ?? 0) + 1);
+}
 ```
 The next problem to figure out was how to filter the words that meet the criteria. To do this, I figured using a `.filter()` method would be a nice place to implement the conditions to satisfy the objective. This is initiated in the following snippet:
 
 ```typescript
-    const result = dictionary.filter(word => {
-        const wordCount = countLetters(word);
-        ...
-    })
+const result = dictionary.filter(word => {
+    const wordCount = countLetters(word);
+    ...
+});
 ```
 Like stated in the beginning of this approach, I needed to also create a map for each word in `dictionary` which is done inside of the filter method.
 
