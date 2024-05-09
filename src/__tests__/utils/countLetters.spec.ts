@@ -36,4 +36,3 @@ describe('countLetters function', () => {
         expect(result.get('d')).toBe(1);
     });
 });
-  

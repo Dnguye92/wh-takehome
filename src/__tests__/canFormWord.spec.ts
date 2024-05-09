@@ -44,4 +44,3 @@ describe('canFormWord function', () => {
         expect(canFormWord(letterCount, wordCount)).toBe(false);
     });
 });
-  
