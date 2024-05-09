@@ -9,6 +9,9 @@ Follow these steps:
 3. Run `npm i` to install project dependencies.
 4. Run `npm run start` to run `src/index.ts`. `ts-node` was added for easability so that we don't have worry about compiling the TypeScript files to JavaScript to run the code.
 
+## Running Tests
+Simply run `npm test` to run the `jest` test suite.
+
 ## High-level Approach
 I first had to figure an effective way to use some data structure that would be able to hold a count for each occurence of a character in a given word; which in this case was a map. Although the lookup time for a map vs an object is the same, a map offers consistent performance for adding keys frequently which is why I decided to go with it. Since I was able to find a suiteable method of counting characters, it called for a helper function that could do this for both `inputString` and for each word in `dictionary`. That function would be:
 
