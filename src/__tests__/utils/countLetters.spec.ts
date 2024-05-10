@@ -1,7 +1,7 @@
 import { countLetters } from "../../utils/countLetters";
 
-describe('countLetters function', () => {
-    test('counts each letter correctly in a simple word', () => {
+describe('countLetters', () => {
+    test('counts each letter correctly', () => {
         const result = countLetters('hello');
         expect(result.get('h')).toBe(1);
         expect(result.get('e')).toBe(1);
