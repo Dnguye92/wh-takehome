@@ -7,7 +7,7 @@ Follow these steps:
 1. Open your terminal, `cd` into your projects directory and run this command `git clone https://github.com/Dnguye92/wh-takehome.git`.
 2. `cd` into `wh-takehome`.
 3. Run `npm i` to install project dependencies.
-4. Run `npm run start` to run `src/index.ts`. `ts-node` was added for easability so that we don't have worry about compiling the TypeScript files to JavaScript to run the code.
+4. Run `npm run start` to run `src/findWords.ts`. `ts-node` was added for easability so that we don't have worry about compiling the TypeScript files to JavaScript to run the code.
 
 ## Running Tests
 Simply run `npm test` to run the `jest` test suite.
