@@ -1,4 +1,4 @@
-import { countLetters } from "../../utils/countLetters";
+import { countLetters } from "../../src/utils/countLetters";
 
 describe('countLetters', () => {
     test('counts each letter correctly', () => {
