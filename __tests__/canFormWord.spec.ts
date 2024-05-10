@@ -1,5 +1,5 @@
-import { countLetters } from "../utils/countLetters";
-import { canFormWord } from "../utils/canFormWord";
+import { countLetters } from "../src/utils/countLetters";
+import { canFormWord } from "../src/utils/canFormWord";
 
 describe('canFormWord', () => {
     test('returns true if the word can be formed', () => {
